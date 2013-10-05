@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+    <meta charset="utf-8" />
+    <title>IS445 Homework 2</title>
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="title">Thomer, Kevin Homework 2</h1>
+            <hr />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="formdemo.html">Web Form Demo</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Welcome to my Web Form</h2>
+        <h3>A demo form for hotel room reservation</h3>
+        <form name="reservation" method="post" id="reservation" action="#">
+            <fieldset id="custinfo">
+                <legend>Customer Information</legend>
+                <label>Full name: <input type="text" name="name" id="name" placeholder="Firstname Lastname" required="required" /></label><br />
+                <label>Email address: <input type="email" name="email" id="email" required="required" /></label><br />
+                <label>Phone: <input type="tel" name="phone" id="phone" required="required" /></label><br />
+            </fieldset>
+            <fieldset id="room">
+                <legend>Room Information</legend>
+                <label>Arrival date: <input type="date" name="adate" id="adate" required="required" /></label><br />
+                <label>Arrival time: <input type="time" name="atime" id="atime" required="required" /></label><br />
+                <label>Select a room type: 
+                    <select name="room" id="room">
+                        <option value="luxury">Luxury</option>
+                        <option value="std">Standard</option>
+                        <option value="econ">Economic</option>
+                    </select>
+                </label><br />
+                <label>Number of nights (valid number is from 1 to 30): <input type="number" min="1" max="30" step="1" name="numnights" id="numnights" value="1" required="required" /></label><br />
+                <label>Number of guests (the maximum guests is 3): <input type="number" min="0" max="3" step="1" name="numguest" id="numguest" value="0" required="required" /></label><br />
+            </fieldset>
+            <fieldset id="other">
+                <legend>Other Information</legend>
+                <label>Promo code: <input type="text" name="promo" pattern="[a-zA-Z0-9]{4}" id="promo" maxlength="4" /></label><br />
+                <label>Special Note: <textarea cols="40" rows="5" wrap="hard" name="notes" id="notes" placeholder="Enter your special notes here"></textarea></label><br />
+            </fieldset>
+            <input type="reset" id="reset" value="Clear form" /> <input type="submit" id="submit" value="Request Reservation" />
+        </form>
+        <footer>
+            Contact Information<br />
+            <address>
+                <a href="mailto:Kevin.Thomer@student.csulb.edu">Email: Kevin.Thomer@student.csulb.edu</a><br />
+                Phone: (562) 281-5710
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
