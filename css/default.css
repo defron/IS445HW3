@@ -1,4 +1,12 @@
-﻿ul{
+﻿a {
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    color: #f00;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+ul{
     padding-top: 0px;
     margin-top: 0px;
 }
@@ -6,24 +14,40 @@ ol {
     padding-top: 0px;
     margin-top: 0px;
 }
+nav {
+    margin: 2em;
+}
 nav > ul {
     list-style-type: none;
     margin-left: 0px;
     padding-left: 0px;
+    text-align: right;
 }
 nav > ul > li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 hr {
     height: 8px;
     background-color: #00ff00;
 }
 footer {
-    margin-top: 40px;
+    border-top: double 3px black;
+    padding-top: 5px;
+    text-align: center;
+    margin: 0px;
+}
+footer span {
+    display: inline;
+    padding-right: 20px;
+}
+address {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
 }
 #wrapper {
-    width: 800px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
