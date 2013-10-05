@@ -1,7 +1,7 @@
 ﻿a {
     text-decoration: none;
 }
-nav > ul > li > a:hover {
+a:hover {
     color: #f00;
     text-transform: uppercase;
     text-decoration: underline;
@@ -42,9 +42,22 @@ footer span {
     padding-right: 20px;
 }
 address {
-    display: inline;
+    display: inline-block;
     padding: 0px;
     margin: 0px;
+}
+h2 {
+    color: blue;
+    text-align: center;
+}
+h3 {
+    color: purple;
+    text-align: center;
+}
+form {
+    border: solid 3px green;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 #wrapper {
     width: 600px;
